@@ -1,4 +1,7 @@
 <?php
+
+$timber = new Timber\Timber();
+
 function my_theme_enqueue_styles() {
 
     $parent_style = 'parent-style'; // This is 'twentyfifteen-style' for the Twenty Fifteen theme.
