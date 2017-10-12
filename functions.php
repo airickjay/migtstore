@@ -11,6 +11,7 @@ function migtStore_include_foundation() {
 	wp_enqueue_script('foundation_app','/wp-content/themes/migtstore/foundation/js/app.js', array('jquery'), null, true);
 
 }
+
 add_action('wp_enqueue_scripts', 'migtStore_include_foundation');
 
 if (function_exists("register_sidebar")) {
