@@ -1,8 +1,11 @@
 <?php
-	$context['path'] = get_template_directory_uri();
-	$context['sitename'] = get_bloginfo('name');
-	$context['charset'] = get_bloginfo('charset');
-	$context['title'] = woocommerce_page_title(false);
+/**
+ * Third party plugins that hijack the theme will call wp_head() to get the header template.
+ * We use this to start our output buffer and render into the view/page-plugin.twig template in footer.php
+ *
+ * If you're not using a plugin that requries this behavior (ones that do include Events Calendar Pro and 
+ * WooCommerce) you can delete this file and footer.php
+ */
 
-	Timber::render('header.twig', $context);
-?>
+$GLOBALS['timberContext'] = Timber::get_context();
+ob_start();
