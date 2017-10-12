@@ -13,4 +13,10 @@ function migtStore_include_foundation() {
 }
 add_action('wp_enqueue_scripts', 'migtStore_include_foundation');
 
+if (function_exists("register_sidebar")) {
+register_sidebar();
+}
+
+//TODO:  Add code to retrieve times for events from the blog site.
+
 ?>
