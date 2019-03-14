@@ -22,7 +22,7 @@
       }
 
       elseif($atts['id'] == $eo->{'event_id'} && $atts['type'] == 'description') {
-        $eventDesc = strip_tags(html_entity_decode($eo->{'field_event_description'}),"<br><a><p><ul><ol><li>");
+        $eventDesc = html_entity_decode($eo->{'field_event_description'});
         $eventInfo = "<p>{$eventDesc}</p>";
       }
 
