@@ -94,11 +94,7 @@ header.entry-header {
     padding-bottom: 20px!important;
 }
 
-.site-search .widget_product_search form input[type=search], .site-search .widget_product_search form input[type=text] {
-    padding-left: 5px;
-}
-
-.aws-search-result ul li {    
+.aws-search-result ul li {
     color: #6d6d6d;
 }
 
