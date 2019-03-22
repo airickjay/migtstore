@@ -102,3 +102,28 @@ pagination .page-numbers li .page-numbers.current, .woocommerce-pagination .page
     background-color: #888;
     color: #ffffff;
 }
+
+ul.tabs.wc-tabs {
+	display: none;
+}
+
+div.woocommerce-Tabs-panel.woocommerce-Tabs-panel--description.panel.entry-content.wc-tab {
+	width: 100%;
+	float: none;
+}
+
+.main-navigation ul.menu>li>a, .main-navigation ul.nav-menu>li>a {
+    padding: 0 1em;
+}
+
+@media (min-width: 768px){
+	.storefront-breadcrumb {
+	    padding: 0;
+	    margin: 0;
+	}
+}
+
+.storefront-breadcrumb {
+    margin: 0;
+    padding: 0;
+}
